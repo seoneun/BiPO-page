@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <meta property="og:title" content="PASTA: Part-based Augmented Synthesis for Text-to-Motion and Adjustment"/>
-  <meta property="og:url" content="https://seoneun.github.io/PASTA-page/"/>
+  <meta property="og:title" content="BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis"/>
+  <meta property="og:url" content="https://seoneun.github.io/BiPO-page/"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <title>PASTA: Part-based Augmented Synthesis for Text-to-Motion and Adjustment</title>
+  <title>BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis</title>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWRYSDM25P"></script>
 <script>
@@ -48,7 +48,7 @@
     <div class="container is-max-widescreen">
       <!-- <div class="columns is-centered"> -->
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PASTA: Part-based Augmented Synthesis for Text-to-Motion and Adjustment</h1>
+          <h1 class="title is-1 publication-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis</h1>
           <div class="is-size-3 publication-authors">
             Arxiv 2024
           </div>
@@ -186,14 +186,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Text-to-motion generation has considerably advanced with part-based autoregressive models.
-Traditional unidirectional approaches are limited by their inability to access future tokens, leading to constrained temporal coherence and suboptimal motion quality.
-Furthermore, autoregressive models are challenging to apply to motion editing tasks.
-Recently, bidirectional autoregressive models have been proposed, integrating past and future contexts to enhance consistency.
-In this work, we introduce the first model to combine part-based generation with bidirectional autoregressive methods. This approach leverages detailed control over individual parts alongside rich temporal context, with the added advantage of applicability to motion editing tasks.
-However, it can cause parts to rely too heavily on each other, as each part must account for expanded contextual information. This reliance can result in tangled motion sequences and compounding small errors in both directions along the sequence.
-To resolve these issues, we propose Partial Occlusion, a stochastic training technique that probabilistically occludes specific motion part information, encouraging the model to learn robust representations under partial context.
-We combine these contributions into PASTA. Our model achieves nearly three times the performance improvement in FID on HumanML3D compared to previous part-based methods and sets a new state-of-the-art.
+            Text-to-motion generation has considerably advanced with part-based autoregressive models. Traditional unidirectional approaches are limited by their inability to access future tokens, leading to constrained temporal coherence and suboptimal motion quality. Furthermore, autoregressive models are challenging to apply to motion editing tasks. Recently, bidirectional autoregressive models have been proposed, integrating past and future contexts to enhance consistency. In this work, we introduce the first model to combine part-based generation with bidirectional autoregressive methods. This approach leverages detailed control over individual parts alongside rich temporal context, with the added advantage of applicability to motion editing tasks. However, it can cause parts to rely too heavily on each other, as each part must account for expanded contextual information. This reliance can result in tangled motion sequences and compounding small errors in both directions along the sequence. To resolve these issues, we propose Partial Occlusion, a stochastic training technique that probabilistically occludes specific motion part information, encouraging the model to learn robust representations under partial context. We combine these contributions into BiPO. Our model achieves superior performance in FID on HumanML3D compared to previous part-based methods and sets a new state-of-the-art.
            </div>
       </div>
     </div>
