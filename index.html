@@ -46,16 +46,14 @@
 <section class="publication-header">
   <div class="hero-body">
     <div class="container is-max-widescreen">
-      <!-- <div class="columns is-centered"> -->
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis</h1>
-          <div class="is-size-3 publication-authors">
-            Arxiv 2024
-          </div>
+      <div class="column has-text-centered">
+        <h1 class="title is-1 publication-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis</h1>
+        <div class="is-size-3 publication-authors">
+          Arxiv 2024
         </div>
+      </div>
     </div>
   </div>
-
 </section>
 
 <section class="publication-author-block">
@@ -69,17 +67,12 @@
             <span class="author-block"><a href="" target="_blank">Juyeong Hwang</a>,</span>
             <span class="author-block"><a href="" target="_blank">Minwook Chang</a>,</span>
             <span class="author-block"><a href="" target="_blank">Hyeongyeop Kang</a></span>
-      
-            
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">Korea University, NC Research, NCSOFT Corp.</span> 
-            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
           </div>
           
-
-
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
@@ -100,9 +93,6 @@
                   <span>Paper</span>
                 </a>
               </span>
-                            </span>
-              </span>
-              <!-- Colab Link. -->
               <span class="link-block">
                 <a href="https://github.com/seoneun/BiPO" target="_blank"
                 class="external-link button is-normal is-rounded">
@@ -111,7 +101,6 @@
                 </span>
                 <span>Code</span>
               </a>
-
               </span>
 
               <span class="link-block">
@@ -122,10 +111,8 @@
                 </span>
                 <span>Demo</span>
               </a>
-
               </span>
-              <!-- </span> -->
-              <!-- Colab Link. -->
+
             </div>
           </div>
 
@@ -137,23 +124,18 @@
 
 <!-- 
 <section class="hero is-small">
-  <!~~ <div class="hero-body"> ~~>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
       <div class="container">
       <div class="item">
       <div class="column is-centered has-text-centered">
-        <img src="static/figures/teaser.png" alt="MotionCLIP"/>
+        <img src="static/figures/teaser.png" alt="MotionCLIP" style="width:720px; height:auto;"/>
       </div>
-
     </div>
   </div>
- <!~~  </div> ~~>
   </div>
   </div>
- <!~~  </div> ~~>
 </section>
  -->
 
@@ -163,27 +145,18 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="item">
-          
-<!-- 
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <source src="static/figures/MDM-page.mp4"
-          type="video/mp4">
-        </video>
- -->
-        <video width="720" height="405" controls>
-  <source src="static/figures/BiPo.mp4" type="video/mp4">
-  <!-- 브라우저가 mp4를 지원하지 않을 경우를 대비한 대체 텍스트/콘텐츠 -->
-  Your browser does not support the video tag.
-</video>
-
-        </p>
+          <video width="720" height="405" controls>
+            <source src="static/figures/BiPo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <p style="margin-bottom: 30px">
+        <p style="margin-bottom: 30px"></p>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Text-to-motion generation has considerably advanced with part-based autoregressive models. Traditional unidirectional approaches are limited by their inability to access future tokens, leading to constrained temporal coherence and suboptimal motion quality. Furthermore, autoregressive models are challenging to apply to motion editing tasks. Recently, bidirectional autoregressive models have been proposed, integrating past and future contexts to enhance consistency. In this work, we introduce the first model to combine part-based generation with bidirectional autoregressive methods. This approach leverages detailed control over individual parts alongside rich temporal context, with the added advantage of applicability to motion editing tasks. However, it can cause parts to rely too heavily on each other, as each part must account for expanded contextual information. This reliance can result in tangled motion sequences and compounding small errors in both directions along the sequence. To resolve these issues, we propose Partial Occlusion, a stochastic training technique that probabilistically occludes specific motion part information, encouraging the model to learn robust representations under partial context. We combine these contributions into BiPO. Our model achieves superior performance in FID on HumanML3D compared to previous part-based methods and sets a new state-of-the-art.
-           </div>
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Abstract. -->
@@ -194,10 +167,9 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="column is-centered has-text-centered" style="position: relative;">
-        <!-- Add the overlay text -->
         <p style="margin-bottom: 30px">
         <h2 class="title is-3">BiPO's Architecture</h2>
-        <img src="static/figures/Figure2.png" alt="BiPO Architecture Diagram"/>
+        <img src="static/figures/Figure2.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
       </div>
     </div>
   </div>
@@ -205,15 +177,12 @@
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Inference</h2>
-          <img src="static/figures/Figure3.png" alt="BiPO Architecture Diagram"/>
-        </div>
+        <img src="static/figures/Figure3.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section>
 
@@ -221,11 +190,10 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="column is-centered has-text-centered" style="position: relative;">
-        <!-- Add the overlay text -->
         <p style="margin-bottom: 30px">
         <h2 class="title is-3">Qualitative test</h2>  
-        <img src="static/figures/Figure4.PNG" alt="BiPO Architecture Diagram"/>
-        <img src="static/figures/Figure5.PNG" alt="BiPO Architecture Diagram"/>
+        <img src="static/figures/Figure4.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
+        <img src="static/figures/Figure5.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
       </div>
     </div>
   </div>
@@ -233,42 +201,36 @@
 
 <section class="section hero is-light">
 <div class="container is-max-desktop">
-  <!-- Abstract. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Motion Editing</h2>
-        <img src="static/figures/Figure6.PNG" alt="BiPO Architecture Diagram"/>
-      </div>
+      <img src="static/figures/Figure6.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
     </div>
   </div>
-  <!--/ Abstract. -->
 </div>
 </section>
 
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-<!--         <h2 class="title is-3">How does it work?</h2> -->
-        <div class="content has-text-justified">
-
-
-<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
+        <section class="section" id="BibTeX">
+          <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
 @article{hong2024bipo,
   title={BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis},
   author={Hong, Seong-Eun and Lim, Soobin and Hwang, Juyeong and Chang, Minwook and Kang, Hyeongyeop},
   journal={arXiv preprint arXiv:2412.00112},
   year={2024}
-}</code></pre>
+}
+            </code></pre>
+          </div>
+        </section>
+      </div>
     </div>
+  </div>
 </section>
-
-
-
 
 <footer class="footer" style="background-color: #f8f9fa; padding: 20px 0; width: 100%;">
   <div style="width: 100%; text-align: left; padding: 0 20px;">
@@ -284,22 +246,20 @@
   </div>
 </footer>
 
+<script type="text/javascript">
+  var sc_project=12351448; 
+  var sc_invisible=1; 
+  var sc_security="c676de4f"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="https://c.statcounter.com/12351448/0/c676de4f/1/"
+  alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
-
-  <script type="text/javascript">
-    var sc_project=12351448; 
-    var sc_invisible=1; 
-    var sc_security="c676de4f"; 
-  </script>
-  <script type="text/javascript"
-  src="https://www.statcounter.com/counter/counter.js"
-  async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-    href="https://statcounter.com/" target="_blank"><img
-    class="statcounter"
-    src="https://c.statcounter.com/12351448/0/c676de4f/1/"
-    alt="Web Analytics"></a></div></noscript>
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
