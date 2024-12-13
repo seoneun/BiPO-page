@@ -122,112 +122,67 @@
   </div>
 </section>
 
-<!-- 
-<section class="hero is-small">
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="container">
-      <div class="item">
-      <div class="column is-centered has-text-centered">
-        <img src="static/figures/teaser.png" alt="MotionCLIP" style="width:720px; height:auto;"/>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</section>
- -->
 
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="item">
-          <video width="720" height="405" controls>
-            <source src="static/figures/BiPo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <p style="margin-bottom: 30px"></p>
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Text-to-motion generation has considerably advanced with part-based autoregressive models. Traditional unidirectional approaches are limited by their inability to access future tokens, leading to constrained temporal coherence and suboptimal motion quality. Furthermore, autoregressive models are challenging to apply to motion editing tasks. Recently, bidirectional autoregressive models have been proposed, integrating past and future contexts to enhance consistency. In this work, we introduce the first model to combine part-based generation with bidirectional autoregressive methods. This approach leverages detailed control over individual parts alongside rich temporal context, with the added advantage of applicability to motion editing tasks. However, it can cause parts to rely too heavily on each other, as each part must account for expanded contextual information. This reliance can result in tangled motion sequences and compounding small errors in both directions along the sequence. To resolve these issues, we propose Partial Occlusion, a stochastic training technique that probabilistically occludes specific motion part information, encouraging the model to learn robust representations under partial context. We combine these contributions into BiPO. Our model achieves superior performance in FID on HumanML3D compared to previous part-based methods and sets a new state-of-the-art.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-centered has-text-centered" style="position: relative;">
-        <p style="margin-bottom: 30px">
-        <h2 class="title is-3">BiPO's Architecture</h2>
-        <img src="static/figures/Figure2.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Inference</h2>
-        <img src="static/figures/Figure3.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
-      </div>
+  <div class="container" style="text-align:center;">
+    <video style="width:720px; height:auto; display:block; margin:auto;" controls>
+      <source src="static/figures/BiPo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h2 class="title is-3" style="margin-top:30px;">Abstract</h2>
+    <div class="content" style="text-align:justify; width:720px; margin:auto;">
+      <p>
+        Text-to-motion generation has considerably advanced with part-based autoregressive models. Traditional unidirectional approaches are limited by their inability to access future tokens, leading to constrained temporal coherence and suboptimal motion quality. Furthermore, autoregressive models are challenging to apply to motion editing tasks. Recently, bidirectional autoregressive models have been proposed, integrating past and future contexts to enhance consistency. In this work, we introduce the first model to combine part-based generation with bidirectional autoregressive methods. This approach leverages detailed control over individual parts alongside rich temporal context, with the added advantage of applicability to motion editing tasks. However, it can cause parts to rely too heavily on each other, as each part must account for expanded contextual information. This reliance can result in tangled motion sequences and compounding small errors in both directions along the sequence. To resolve these issues, we propose Partial Occlusion, a stochastic training technique that probabilistically occludes specific motion part information, encouraging the model to learn robust representations under partial context. We combine these contributions into BiPO. Our model achieves superior performance in FID on HumanML3D compared to previous part-based methods and sets a new state-of-the-art.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-centered has-text-centered" style="position: relative;">
-        <p style="margin-bottom: 30px">
-        <h2 class="title is-3">Qualitative test</h2>  
-        <img src="static/figures/Figure4.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
-        <img src="static/figures/Figure5.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
-      </div>
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-3">BiPO's Architecture</h2>
+      <img src="static/figures/Figure2.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
     </div>
   </div>
 </section>
 
 <section class="section hero is-light">
-<div class="container is-max-desktop">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Motion Editing</h2>
-      <img src="static/figures/Figure6.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto;"/>
+  <div class="container" style="text-align:center;">
+    <h2 class="title is-3">Inference</h2>
+    <img src="static/figures/Figure3.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="text-align:center;">
+      <h2 class="title is-3">Qualitative test</h2>  
+      <img src="static/figures/Figure4.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto; margin-bottom:30px;"/>
+      <img src="static/figures/Figure5.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
     </div>
   </div>
-</div>
 </section>
 
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <section class="section" id="BibTeX">
-          <div class="container is-max-desktop content">
-            <h2 class="title">BibTeX</h2>
-            <pre><code>
+  <div class="container" style="text-align:center;">
+    <h2 class="title is-3">Motion Editing</h2>
+    <img src="static/figures/Figure6.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container" style="text-align:center;">
+    <h2 class="title is-3">BibTeX</h2>
+    <div class="content" style="width:720px; margin:auto; text-align:left;">
+<pre><code>
 @article{hong2024bipo,
   title={BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis},
   author={Hong, Seong-Eun and Lim, Soobin and Hwang, Juyeong and Chang, Minwook and Kang, Hyeongyeop},
   journal={arXiv preprint arXiv:2412.00112},
   year={2024}
 }
-            </code></pre>
-          </div>
-        </section>
-      </div>
+</code></pre>
     </div>
   </div>
 </section>
