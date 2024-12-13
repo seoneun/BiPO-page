@@ -143,8 +143,10 @@
     <div class="container" style="text-align:center;">
       <h2 class="title is-3">BiPO's Architecture</h2>
       <img src="static/figures/Figure2.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+      <div class="content" style="text-align:justify; width:720px; margin:auto;">
       <p>BiPO introduces a novel part-based bidirectional autoregressive network designed to generate coherent and controllable human motions from textual descriptions. Unlike existing approaches that either rely solely on unidirectional generation or lack per-part controllability, BiPO represents the human body as multiple parts—root, backbone, arms, and legs—each generated through its own transformer-based pipeline. These parts can reference one another through a Selective Part Coordination Layer, enabling the model to maintain global motion coherence while allowing fine-grained control at the part level. To prevent parts from becoming overly reliant on one another, BiPO employs Partial Occlusion, randomly obscuring certain part tokens during training. This encourages each component to learn robust representations independently, resulting in more stable and natural full-body motion synthesis.</p>
-    </div>
+      </div>
+      </div>
   </div>
 </section>
 
@@ -152,8 +154,10 @@
   <div class="container" style="text-align:center;">
     <h2 class="title is-3">Inference</h2>
     <img src="static/figures/Figure3.png" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+    <div class="content" style="text-align:justify; width:720px; margin:auto;">
     <p>During inference, BiPO employs a dual-phase decoding strategy to refine the motion output. In the initial phase, each body part’s motion tokens are generated in a unidirectional manner, guided by the textual prompt. This step provides a coarse yet contextually appropriate sequence. In the second phase, BiPO applies a bidirectional autoregressive refinement: selectively masking and regenerating certain tokens while considering both past and future context. By integrating the updated tokens from all parts, the model corrects potential inconsistencies and enhances the temporal smoothness and structural integrity of the motion. The result is a polished, high-quality motion sequence that faithfully represents the provided text.</p>
-  </div>
+    </div>  
+    </div>
 </section>
 
 <section class="hero is-small">
@@ -162,8 +166,10 @@
       <h2 class="title is-3">Qualitative test</h2>  
       <img src="static/figures/Figure4.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto; margin-bottom:30px;"/>
       <img src="static/figures/Figure5.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+      <div class="content" style="text-align:justify; width:720px; margin:auto;">
       <p>Qualitative evaluations of BiPO highlight its ability to produce fluid, context-rich human motions that capture nuanced details of the textual description. From dynamic activities like “a person hops in place and then starts to sway” to more subtle sequences like “a person carefully leans forward to pick up an object,” BiPO’s outputs stand out as natural, lifelike, and semantically aligned. Compared to prior methods, BiPO demonstrates clearer transitions, balanced posture control, and fine-grained articulation in limbs. These tests illustrate how the model’s architecture and training strategy combine to yield motions that not only look realistic but also faithfully reflect the intended textual narrative.</p>
-    </div>
+      </div>
+      </div>
   </div>
 </section>
 
@@ -171,8 +177,10 @@
   <div class="container" style="text-align:center;">
     <h2 class="title is-3">Motion Editing</h2>
     <img src="static/figures/Figure6.PNG" alt="BiPO Architecture Diagram" style="width:720px; height:auto; display:block; margin:auto;"/>
+    <div class="content" style="text-align:justify; width:720px; margin:auto;">
     <p>Beyond straightforward text-to-motion generation, BiPO excels in motion editing tasks, where only partial information—such as a starting pose or a midpoint sequence—is provided. Through its bidirectional inference process and robust part-based representation, BiPO can seamlessly fill in missing segments, extend a partially completed motion, or adjust the trajectory to accommodate new textual constraints. Whether predicting the next steps of a dancer after a given pose or completing the beginning and end of a walking sequence, BiPO maintains consistency, style, and semantic fidelity to the user’s directions. This adaptability opens new possibilities for iterative refinement and user-guided editing of 3D human motion data.</p>
-  </div>
+    </div>
+    </div>
 </section>
 
 <section class="section hero is-light">
